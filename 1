@@ -1,0 +1,11 @@
+# include <stdio.h>
+
+int main(void)
+{
+    int num = 10;
+    int* pnum = &num;
+
+    printf("%p, %p, %x, %x\n", &num, pnum, *(&num), *pnum);
+
+    return 0;
+}
